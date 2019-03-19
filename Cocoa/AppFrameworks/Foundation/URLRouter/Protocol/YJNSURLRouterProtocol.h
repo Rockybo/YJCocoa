@@ -9,6 +9,9 @@
 //  Copyright © 2017年 YJCocoa. All rights reserved.
 //
 
+#ifndef YJNSURLRouterProtocol_h
+#define YJNSURLRouterProtocol_h
+
 NS_ASSUME_NONNULL_BEGIN
 
 /** 路由回调*/
@@ -17,6 +20,7 @@ typedef void (^ YJRCompletionHandler)(NSDictionary * _Nullable options);
 typedef BOOL (^ YJRUnregisteredCanOpen)(NSString *url);
 /** 打开路由*/
 typedef void (^ YJROpenHandler)(NSString *url, NSDictionary *options, YJRCompletionHandler _Nullable handler);
+
 
 /** 路由代理*/
 @protocol YJNSURLRouterProtocol <NSObject>
@@ -64,3 +68,4 @@ typedef void (^ YJROpenHandler)(NSString *url, NSDictionary *options, YJRComplet
 
 NS_ASSUME_NONNULL_END
 
+#endif /* YJNSURLRouterProtocol_h */
