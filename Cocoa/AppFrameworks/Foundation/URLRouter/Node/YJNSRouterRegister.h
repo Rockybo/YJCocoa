@@ -23,13 +23,13 @@ NS_ASSUME_NONNULL_BEGIN
 /**
  *  @abstract 初始化
  *
- *  @param cls   节点实现类
- *  @param url   节点对应的路径
+ *  @param url YJNSRouterURL
  *  @param cache 是否缓存
+ *  @param cls   节点YJNSURLRouterProtocol实现类
  *
  *  @return instancetype
  */
-- (instancetype)initWithClass:(Class)cls url:(NSString *)url cache:(BOOL)cache;
+- (instancetype)initWithURL:(NSString *)url cache:(BOOL)cache cls:(Class)cls;
 
 /**
  *  @abstract 初始化
